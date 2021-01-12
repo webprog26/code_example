@@ -1,0 +1,12 @@
+function hideTopAdBanner() {
+  var topAdBanner = document.getElementById('yhb5224');
+            
+  if (topAdBanner) {
+    topAdBanner.remove();
+  }
+}
+            
+if (document.readyState == 'loading') {
+  document.addEventListener("DOMContentLoaded", hideTopAdBanner);
+} else {
+  hideTopAdBanner();}
