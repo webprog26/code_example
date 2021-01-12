@@ -1,24 +1,6 @@
 function hideAdsElements(){
-            var style = document.createElement('style');
-            style.innerHTML = "ytm-promoted-sparkles-text-search-renderer, ytm-promoted-video-renderer," +
-                    "ytm-companion-slot, ytp-paid-content-overlay, ytp-ad-module," +
-                    "#YtKevlarVisibilityIdentifier, #YtSparklesVisibilityIdentifier, #feed-pyv-container," +
-                    "#feedmodule-PRO, #homepage-chrome-side-promo, #merch-shelf, #pla-shelf," +
-                    "#premium-yva, #promo-info, #promo-list, #search-pva, #shelf-pyv-container, #video-masthead," +
-                    "#watch-branded-actions, #watch-buy-urls, #watch-channel-brand-div, .GoogleActiveViewElement," +
-                    ".banner-promo-style-type-masthead-v2, .carousel-offer-url-container, .companion-ad-container," +
-                    ".promoted-sparkles-text-search-root-container, .promoted-videos," +
-                    ".searchView.list-view, .sparkles-light-cta, .watch-extra-info-column, .watch-extra-info-right," +
-                    ".ytd-action-companion-ad-renderer, .ytd-carousel-ad-renderer, .ytd-compact-promoted-video-renderer," +
-                    ".ytd-companion-slot-renderer, .ytd-display-ad-renderer,.ytd-merch-shelf-renderer, .ytd-player-legacy-desktop-watch-ads-renderer," +
-                    ".ytd-promoted-sparkles-text-search-renderer, .ytd-promoted-video-renderer, .ytd-search-pyv-renderer," +
-                    ".ytd-video-masthead-ad-v3-renderer, .ytp-ad-action-interstitial-background-container, .ytp-ad-action-interstitial-slot," +
-                    ".ytp-ad-image-overlay, .ytp-ad-overlay-container, .ytp-ad-progress, .ytp-ad-progress-list," +
-                    "ytd-compact-promoted-video-renderer, ytd-companion-slot-renderer, ytd-promoted-sparkles-web-renderer," +
-                    "ytd-single-option-survey-renderer, ytd-video-masthead-ad-v3-renderer, ytm-promoted-sparkles-web-renderer," +
-                    "ytd-promoted-sparkles-text-search-renderer, ytd-promoted-video-renderer, #masthead-ad {display: none !important;}';\n" 
-            var ref = document.querySelector('script');
-            ref.parentNode.insertBefore(style, ref);}
+            alert("Hi!");
+            }
             if (document.readyState == 'loading') {
                     document.addEventListener("DOMContentLoaded", hideAdsElements);
             } else {
