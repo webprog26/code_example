@@ -1,0 +1,27 @@
+function hideAds() {
+ var player = document.getElementById('oframeplayer'); 
+            if (player) {
+            var playerChildBlocksCollection = player.children;
+                   if (playerChildBlocksCollection) {
+                       var childBlocksCount = playerChildBlocksCollection.length;
+                       if (childBlocksCount > 0) {
+                           for (var i = 0; i < childBlocksCount; i++) {
+                               var child = playerChildBlocksCollection.item(i);
+                               if (child) {
+                                   var childTag = child.tagName.toLowerCase();
+                                   if (childTag == 'pjsdiv') {
+                                       var childText = child.innerText;
+                                       if (childText.toLowerCase().indexOf('adblock') != -1) {
+                                           child.remove(); break;
+                                       }
+                                   }
+                               }
+                           }
+                       }
+                   }
+            }
+}
+if (document.readyState == 'loading') {
+  document.addEventListener("DOMContentLoaded", hideAds);
+} else {
+  hideAds();}
